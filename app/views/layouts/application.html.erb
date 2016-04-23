@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parallel</title>
+
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		<nav class="navbar-fixed-top">
+	<!-- 		<div id="name_box">  -->
+				<div class="container-fluid">
+					<div class="row">
+						<img id="banner"class="img-responsive" src="assets/images/banner.png" alt=""><center>
+					</div>
+					
+				</div>
+
+	<!-- 		</div> -->
+				<!-- <div class="links"> -->
+					<!-- <ul> -->
+				<!-- 	</ul> -->
+				<!-- </div> -->
+		</nav>
+
+<%= yield %>
+
+</body>
+</html>

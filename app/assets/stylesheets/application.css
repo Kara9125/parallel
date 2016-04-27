@@ -18,7 +18,7 @@ body, #signup{
 	flex-direction: column;
 }
 
-#signup, #form{
+#signup, #form, #backButton, #nextButton{
 	align-self:center;
 }
 
@@ -94,7 +94,7 @@ body, #signup{
  	text-align: center;
  }
 
- #continue{
+ #continue, #backButton, #nextButton{
  	text-align: center;
  	left:50%;
  	/*padding-top: 1em;*/
@@ -107,6 +107,14 @@ body, #signup{
  	font-size: 1.3em;
 
 
+ }
+
+ #backButton{
+ 	left: 30%;
+ }
+
+ #nextButton{
+ 	right: 30%;
  }
 
  .formfield{

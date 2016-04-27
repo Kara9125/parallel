@@ -1,2 +1,31 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div id="signup">
+	<h1>Let's Get Started</h1>
+<!-- 	<p id: "paragraph">Having great content and loads of followers is not enough to get noticed. Please provide us with a little more information below to help us connect you with brands.</p>
+	<div id="form"> -->
+		<%= form_for @user, url: users_path, class: "formfield", method: "post" do |f| %>
+		<br>
+			<%= f.text_field :first_name, placeholder: "First Name", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :last_name, placeholder: "Last Name", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :email, placeholder: "Email Adress", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :password_digest, placeholder: "Password", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :insta_handle, placeholder: "Instagram Handle", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :website, placeholder: "Website", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :gender, placeholder: "Gender", class: "formfield" %><br>
+		<br>
+			<%= f.date_select :date_of_birth, :order => [:day, :month, :year], placeholder:"Birth Date", class: "formfield" %><br>
+		<br>
+			<%= f.text_field :location, placeholder:"Location", class: "formfield" %><br>
+			<hr>
+			<%= f.submit "Continue", class: "btn btn-large btn-primary", id: "continue" %><br>
+
+		<% end %>
+	</div>
+</div>
+
+
